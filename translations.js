@@ -31,7 +31,7 @@ const translations = {
   }
 };
 
-export default function getMessage(locale, key) {
+module.exports = function getMessage(locale, key) {
   let translationExists = (translations[locale] && translations[locale][key]);
 
   if (!translationExists) {
